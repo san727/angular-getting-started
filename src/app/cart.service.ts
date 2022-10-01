@@ -23,6 +23,7 @@ export class CartService {
   }
 
   getShippingPrices() {
+    //Getting a list of structs with {type: string, price: number} from assets/shipping.json
     return this.http.get<{type: string, price: number}[]>('assets/shipping.json');
   }
 }

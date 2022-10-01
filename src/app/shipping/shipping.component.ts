@@ -9,6 +9,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./shipping.component.css']
 })
 export class ShippingComponent implements OnInit {
+  //What is an observable???
   shippingCosts!: Observable<{ type: string, price: number}[]>;
 
   constructor(private cartService:CartService) { }
